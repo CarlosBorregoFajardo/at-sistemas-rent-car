@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/yourdb?serverTimezone=UTC
+    username: usuario
+    password: usuario
+    driverclassname: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: false
+    format-sql: true
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.MariaDB53Dialect
